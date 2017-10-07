@@ -1,0 +1,21 @@
+1.3. A Brief Introduction to Recursion:
+
+    . An important point, however, is that recursive calls will keep on being made until a base case is reached;
+    
+    . These considerations lead to the first two fundamental rules of recursion:
+        . Base cases. You must always have some base cases, which can be solved without recursion.
+        . Making progress. For the cases that are to be solved recursively, the recursive call must always be to a case that
+        makes progress toward a base case;
+
+
+
+
+
+
+
+
+
+
+
+
+
