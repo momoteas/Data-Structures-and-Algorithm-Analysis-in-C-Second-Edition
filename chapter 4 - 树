@@ -1,0 +1,11 @@
+4.1 预备知识：
+    4.1.1 树的实现：
+        >. typedef struct TreeNode *PtrToNode;
+           struct TreeNode{
+               ElementType Element;
+               PtrToNode FirstChild;
+               PtrToNode NextSibling;
+           };
+    4.1.2 树的遍历及应用：
+        >. 用途：操作系统的目录结构；
+        >. 遍历的方法：先序遍历（preorder traversal）， 后序遍历（postorder traversal）;
