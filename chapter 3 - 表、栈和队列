@@ -7,4 +7,15 @@
                         唯一潜在危害是需要提前声明一个数组的大小；       
                         错误检查：对空栈的pop和对满栈的push;
                         定义一个结构体，该结构体包含TopOfStack域和Capacity域，一旦知道最大容量，则该栈即可被动态地确定；
+3.4 队列ADT:
+    3.4.1 队列模型：末端（rear）插入，开头（front）删除；
+    3.4.2 队列的数组实现：队列为空时 Rear = Front - 1;
+                         以一种结构的方式：struct QueueRecord{
+                                             int Capcacity;
+                                             int Front;
+                                             int Rear;
+                                             int Size;
+                                             ElementType *Array;
+                                          };
+
                         
