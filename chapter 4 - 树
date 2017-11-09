@@ -9,3 +9,35 @@
     4.1.2 树的遍历及应用：
         >. 用途：操作系统的目录结构；
         >. 遍历的方法：先序遍历（preorder traversal）， 后序遍历（postorder traversal）;
+        
+4.2 二叉树：
+    4.2.1 特殊类型的二叉树，即二叉查找树，其深度的平均值是O(logN);
+        >. 二叉树节点的声明：
+            typedef struct TreeNode *PtrToNode;
+            typedef struct PtrToNode Tree;
+            
+            struct TreeNode{
+                ElementType Element;
+                Tree    Left;
+                Tree    Right;
+             };
+        >. 二叉树的主要用处之一是在编译器的设计领域；
+        >. 构造一棵表达式树：应用中缀表达式转换为后缀表达式的算法；
+        
+4.3 查找树ADT-二叉查找树：
+    >. 二叉树的一个重要应用是在查找中使用；
+    >. 二叉查找树的重要性质：对于树中的每个节点X，它的左子树中所有关键字值小于X的关键字值，而它的右子树中所有关键字大于X的关键字值；
+    >. 由于树的递归定义，通常是递归地编写这些操作的例程。因为二叉查找树的平均深度是O(logN)，所以我们一般不必担心栈空间被用尽；
+    
+    4.3.1 MakeEmpty
+    4.3.2 Find: 使用尾递归；
+    4.3.3 FindMin: 从根开始沿着左子树到终点；FindMax：从根开始沿着右子树到终点；
+        >. FindMax的非递归实现：
+            Position FindMax(SearchTree T){
+                if(T != NULL)
+                    while(T->Right != NULL)
+                        T=T->Right;
+                return T;
+            }
+            
+                
