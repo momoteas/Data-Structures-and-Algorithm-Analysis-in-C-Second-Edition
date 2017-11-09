@@ -39,5 +39,6 @@
                         T=T->Right;
                 return T;
             }
-            
+    4.3.4 Insert: 进行插入操作的例程在概念上是简单的；
+    4.3.4 Delete: 
                 
